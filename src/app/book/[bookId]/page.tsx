@@ -7,7 +7,8 @@ const SingleBookPage = async ({ params }: { params: { bookId: string } }) => {
 
   try {
     const response = await fetch(
-      `http://localhost:5050/books/${params.bookId}`
+      `http://localhost:5050/books/${params.bookId}`,
+      { cache: "no-store" }
     );
     if (!response.ok) {
       throw new Error("Failed to fetch book");
