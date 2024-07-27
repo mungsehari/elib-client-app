@@ -19,7 +19,7 @@ const BookCard = ({ book }: { book: Book }) => {
         </h2>
         <p className="font-bold mt-1"> {book.author} </p>
         <Link
-          href={`/book/${book._id}`}
+          href={`/book/${book.id}`}
           className="py-1 px-2 rounded border border-orange-500 mt-4 inline-block text-orange-400 text-sm font-medium hover:border-orange-300 hover:bg-orange-100 transition"
         >
           Read more
