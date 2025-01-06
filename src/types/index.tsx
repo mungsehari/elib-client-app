@@ -1,12 +1,12 @@
 export type Book = {
-  id: string;
+  _id: string;
   title: string;
-  author: string;
+  author: Author;
   description: string;
-  imageUrl: string;
+  coverImage: string;
   price: number;
 };
 
-// export type Author = {
-//   name: string;
-// };
+export type Author = {
+  name: string;
+};
